@@ -1,7 +1,40 @@
 .catalog:
-  name: # Name of the versioned template of the Catalog Entry
-  version: # Version of the versioned template of the Catalog Entry
-  description: # Description of the versioned template of the Catalog Entry
-  uuid: # Unique identifier to be used for upgrades. Please see note.
-  minimum_rancher_version: # The minimum version of Rancher that supports the template
-  questions: #Used to request user input for configuration options
+  name: Plex Server
+  version: v0.1
+  description: Plex Media Server
+  questions:
+    - variable: "PORT"
+      type: "string"
+      label: "PORT"
+      description: Frontend Port of Plex
+      default: 32400
+    - variable: "PATHCONFIG"
+      type: "string"
+      label: "Config Path"
+      description: persistang Path to your Plex Config (/home/nick/plex, ...)
+      default: '/home'
+    - variable: "PATHMEDIA"
+      type: "string"
+      label: "Media Path"
+      description: the Path to your library (/media, or a nfs mount /mnt, ...)
+      default: '/media'
+    - variable: "PUID"
+      type: "string"
+      label: "PUID"
+      description: GroupID (not required)
+    - variable: "PGID"
+      type: "string"
+      label: "PGID"
+      description: PGID (not required)
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - managed
+        - none
+      required: true
+      default: "host"
+plex:
+  scale: 1
