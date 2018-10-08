@@ -6,6 +6,7 @@
     - variable: "HOSTNAME"
       type: "string"
       label: "HOSTNAME"
+      default: "plex"
       description: Name to use for plex name on server list
     - variable: "PORT"
       type: "string"
@@ -15,13 +16,13 @@
     - variable: "PATHCONFIG"
       type: "string"
       label: "Config Path"
-      description: persistang Path to your Plex Config (/home/nick/plex, ...)
+      description: persistang Path to your Plex Config (/var/lib/plexmediaserver, ...)
       default: '/home'
     - variable: "PATHMEDIA"
       type: "string"
       label: "Media Path"
       description: the Path to your library (/media, or a nfs mount /mnt, ...)
-      default: '/media'
+      default: '/data'
     - variable: "PUID"
       type: "string"
       label: "PUID"
