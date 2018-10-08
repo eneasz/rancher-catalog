@@ -21,11 +21,11 @@
     - variable: "PUID"
       type: "string"
       label: "PUID"
-      description: GroupID (not required)
+      description: Plex GroupID (not required)
     - variable: "PGID"
       type: "string"
       label: "PGID"
-      description: PGID (not required)
+      description: Plex PGID (not required)
     - variable: NET
       description: "select Network type"
       label: "Network"
