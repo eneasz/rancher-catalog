@@ -1,6 +1,6 @@
 plex:
-  hostname: ${HOSTNAME}
   image: linuxserver/plex
+  hostname: ${HOSTNAME}
   environment:
     - VERSION=latest
     - HOSTNAME=${HOSTNAME}
