@@ -1,14 +1,16 @@
-plex:
-  hostname: ${HOSTNAME}
-  image: linuxserver/plex
-  environment:
-    - VERSION=latest
-    - HOSTNAME=${HOSTNAME}
-    - PUID=${PUID}
-    - PGID=${PGID}
-  ports:
-    - ${PORT}:32400
-  volumes:
-    - ${PATHCONFIG}:/config
-    - ${PATHMEDIA}:/data
-  net: ${NET}
+version: '2'
+services:
+  plex:
+    image: linuxserver/plex
+    hostname: ${HOSTNAME}
+    environment:
+      - VERSION=latest
+      - HOSTNAME=${HOSTNAME}
+      - PUID=${PUID}
+      - PGID=${PGID}
+    ports:
+      - ${PORT}:32400
+    volumes:
+      - ${PATHCONFIG}:/config
+      - ${PATHMEDIA}:/data
+    net: ${NET}
