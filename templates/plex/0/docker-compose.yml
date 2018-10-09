@@ -1,4 +1,5 @@
 plex:
+  hostname: ${HOSTNAME}
   image: linuxserver/plex
   environment:
     - VERSION=latest
