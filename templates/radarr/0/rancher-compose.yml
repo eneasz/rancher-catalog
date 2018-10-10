@@ -16,13 +16,13 @@
     - variable: "PATHCONFIG"
       type: "string"
       label: "Config Path"
-      description: Radarr Application Data (/var/lib/radarr, ...)
-      default: '/var/lib/radarr/config'
+      description: Radarr Application Data (/var/lib/Radarr, ...)
+      default: '/var/lib/Radarr'
     - variable: "PATHDOWNLOAD"
       type: "string"
       label: "Download Path"
       description: Downloads Folder (/download, or a nfs mount /mnt, ...)
-      default: '/var/lib/radarr/download'
+      default: '/data/Download'
     - variable: "PATHMOVIES"
       type: "string"
       label: "Movie Share"
@@ -32,6 +32,7 @@
       type: "string"
       label: "TZ"
       description: Time Zone
+      default: "Europe/London"
     - variable: "PUID"
       type: "string"
       label: "PUID"

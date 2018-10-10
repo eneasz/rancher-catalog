@@ -1,4 +1,4 @@
-plex:
+Radarr:
   image: linuxserver/radarr
   hostname: ${HOSTNAME}
   environment:
