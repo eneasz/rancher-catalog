@@ -18,11 +18,6 @@
       label: "Config Path"
       description: Radarr Application Data (/var/lib/Radarr, ...)
       default: '/var/lib/Radarr'
-    - variable: "PATHDOWNLOAD"
-      type: "string"
-      label: "Download Path"
-      description: Downloads Folder (/download, or a nfs mount /mnt, ...)
-      default: '/data/Movies'
     - variable: "PATHMOVIES"
       type: "string"
       label: "Movie Share"
