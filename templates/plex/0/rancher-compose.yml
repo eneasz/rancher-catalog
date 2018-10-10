@@ -41,5 +41,5 @@
         - none
       required: true
       default: "host"
-plex:
+Plex:
   scale: 1
