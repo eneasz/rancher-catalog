@@ -22,7 +22,7 @@
       type: "string"
       label: "Download Path"
       description: Downloads Folder (/download, or a nfs mount /mnt, ...)
-      default: '/data/Download'
+      default: '/data/Movies'
     - variable: "PATHMOVIES"
       type: "string"
       label: "Movie Share"
@@ -51,5 +51,5 @@
         - none
       required: true
       default: "host"
-radarr:
+Radarr:
   scale: 1

@@ -1,4 +1,4 @@
-radarr:
+Radarr:
   image: linuxserver/radarr
   hostname: ${HOSTNAME}
   environment:
@@ -11,7 +11,7 @@ radarr:
     - ${PORT}:7878
   volumes:
     - ${PATHCONFIG}:/config
-    - ${PATHDOWNLOAD}:/downloads
-    - ${PATHMOVIES}:/movies
+    - ${PATHDOWNLOAD}:${PATHDOWNLOAD}
+    - ${PATHMOVIES}:${PATHMOVIES}
     - /etc/localtime:/etc/localtime:ro
   net: ${NET}
