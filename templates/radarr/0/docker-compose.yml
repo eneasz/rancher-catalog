@@ -1,4 +1,4 @@
-Radarr:
+radarr:
   image: linuxserver/radarr
   hostname: ${HOSTNAME}
   environment:
