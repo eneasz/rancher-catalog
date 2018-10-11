@@ -1,5 +1,5 @@
-Radarr:
-  image: linuxserver/radarr
+Sonarr:
+  image: linuxserver/sonarr
   hostname: ${HOSTNAME}
   environment:
     - VERSION=latest
@@ -8,9 +8,9 @@ Radarr:
     - PGID=${PGID}
     - TZ=${TZ}
   ports:
-    - ${PORT}:7878
+    - ${PORT}:8989
   volumes:
     - ${PATHCONFIG}:/config
-    - ${PATHMOVIES}:${PATHMOVIES}
+    - ${PATHTVSERIES}:${PATHTVSERIES}
     - /etc/localtime:/etc/localtime:ro
   net: ${NET}

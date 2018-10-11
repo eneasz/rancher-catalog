@@ -1,28 +1,28 @@
 .catalog:
-  name: Radarr Server
+  name: Sonarr Server
   version: v0.1
-  description: Radarr Server
+  description: Sonarr Server
   questions:
     - variable: "HOSTNAME"
       type: "string"
       label: "HOSTNAME"
-      default: "radarr"
+      default: "sonarr"
       description: Name to use for radarr name on server list
     - variable: "PORT"
       type: "string"
       label: "PORT"
       description: Frontend Port of radarr
-      default: 7878
+      default: 8989
     - variable: "PATHCONFIG"
       type: "string"
       label: "Config Path"
-      description: Radarr Application Data (/var/lib/Radarr, ...)
-      default: '/var/lib/Radarr'
-    - variable: "PATHMOVIES"
+      description: Radarr Application Data (/var/lib/Sonarr, ...)
+      default: '/var/lib/Sonarr'
+    - variable: "PATHTVSERIES"
       type: "string"
-      label: "Movie Share"
-      description: the Path to your movies library (/Movies, or a nfs mount /mnt, ...)
-      default: '/data/Movies'
+      label: "TVSERIES Share"
+      description: the Path to your TVSERIES library (/TVSERIES, or a nfs mount /mnt, ...)
+      default: '/data/TV'
     - variable: "TZ"
       type: "string"
       label: "TZ"
@@ -46,5 +46,5 @@
         - none
       required: true
       default: "host"
-Radarr:
+Sonarr:
   scale: 1
