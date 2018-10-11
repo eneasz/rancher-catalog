@@ -1,4 +1,4 @@
-Sonarr:
+UniFi:
   image: linuxserver/unifi
   hostname: ${HOSTNAME}
   environment:
