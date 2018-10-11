@@ -1,0 +1,50 @@
+.catalog:
+  name: Radarr Server
+  version: v0.1
+  description: Radarr Server
+  questions:
+    - variable: "HOSTNAME"
+      type: "string"
+      label: "HOSTNAME"
+      default: "radarr"
+      description: Name to use for radarr name on server list
+    - variable: "PORT"
+      type: "string"
+      label: "PORT"
+      description: Frontend Port of radarr
+      default: 7878
+    - variable: "PATHCONFIG"
+      type: "string"
+      label: "Config Path"
+      description: Radarr Application Data (/var/lib/Radarr, ...)
+      default: '/var/lib/Radarr'
+    - variable: "PATHMOVIES"
+      type: "string"
+      label: "Movie Share"
+      description: the Path to your movies library (/Movies, or a nfs mount /mnt, ...)
+      default: '/data/Movies'
+    - variable: "TZ"
+      type: "string"
+      label: "TZ"
+      description: Time Zone
+      default: "Europe/London"
+    - variable: "PUID"
+      type: "string"
+      label: "PUID"
+      description: plex GroupID (not required)
+    - variable: "PGID"
+      type: "string"
+      label: "PGID"
+      description: plex PGID (not required)
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - managed
+        - none
+      required: true
+      default: "host"
+Radarr:
+  scale: 1

@@ -1,0 +1,16 @@
+Radarr:
+  image: linuxserver/radarr
+  hostname: ${HOSTNAME}
+  environment:
+    - VERSION=latest
+    - HOSTNAME=${HOSTNAME}
+    - PUID=${PUID}
+    - PGID=${PGID}
+    - TZ=${TZ}
+  ports:
+    - ${PORT}:7878
+  volumes:
+    - ${PATHCONFIG}:/config
+    - ${PATHMOVIES}:${PATHMOVIES}
+    - /etc/localtime:/etc/localtime:ro
+  net: ${NET}
