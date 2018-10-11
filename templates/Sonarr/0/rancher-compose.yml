@@ -22,7 +22,7 @@
       type: "string"
       label: "TVSERIES Share"
       description: the Path to your TVSERIES library (/TVSERIES, or a nfs mount /mnt, ...)
-      default: '/data/TV'
+      default: '/data/Tv'
     - variable: "TZ"
       type: "string"
       label: "TZ"

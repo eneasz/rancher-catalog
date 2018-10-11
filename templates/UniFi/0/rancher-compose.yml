@@ -1,0 +1,75 @@
+.catalog:
+  name: UniFi Controller
+  version: v0.1
+  description: niFi Controller
+  questions:
+    - variable: "HOSTNAME"
+      type: "string"
+      label: "HOSTNAME"
+      default: "sonarr"
+      description: Name to use for radarr name on server list
+    - variable: "PATHCONFIG"
+      type: "string"
+      label: "Config Path"
+      description: UniFi Application Data (/var/lib/UniFi, ...)
+      default: '/var/lib/UniFi'
+    - variable: "PORT1"
+      type: "string"
+      label: "PORT1"
+      description: Port 3478/udp
+      default: 3478
+    - variable: "PORT2"
+      type: "string"
+      label: "PORT2"
+      description: Port 10001/udp
+      default: 10001
+    - variable: "PORT3"
+      type: "string"
+      label: "PORT3"
+      description: Port 8080
+      default: 8080
+    - variable: "PORT4"
+      type: "string"
+      label: "PORT4"
+      description: Port 8081
+      default: 8081
+    - variable: "PORT5"
+      type: "string"
+      label: "PORT5"
+      description: Port 8443
+      default: 8443
+    - variable: "PORT6"
+      type: "string"
+      label: "PORT6"
+      description: Port 8843
+      default: 8843
+    - variable: "PORT7"
+      type: "string"
+      label: "PORT7"
+      description: Port 8880
+      default: 8880
+    - variable: "PORT8"
+      type: "string"
+      label: "PORT8"
+      description: Port 6789
+      default: 6789
+    - variable: "PUID"
+      type: "string"
+      label: "PUID"
+      description: UniFi GroupID (not required)
+    - variable: "PGID"
+      type: "string"
+      label: "PGID"
+      description: UniFi PGID (not required)
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - managed
+        - none
+      required: true
+      default: "host"
+Sonarr:
+  scale: 1
