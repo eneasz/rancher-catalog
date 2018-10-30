@@ -1,0 +1,10 @@
+DM800:
+  image: eneasz/dm800
+  hostname: ${HOSTNAME}
+  environment:
+    - VERSION=latest
+    - HOSTNAME=${HOSTNAME}
+    - NGROK_AUTH=${NGROK_AUTH}
+  ports:
+    - ${PORT}:32400
+  net: ${NET}

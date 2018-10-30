@@ -1,0 +1,26 @@
+.catalog:
+  name: Alexa skill
+  version: v0.1
+  description: Alexa skill to control dm800
+  questions:
+    - variable: "HOSTNAME"
+      type: "string"
+      label: "HOSTNAME"
+      default: "plex"
+      description: Name to use for plex name on server list
+    - variable: "NGROK_AUTH"
+      type: "string"
+      label: "NGROK_AUTH"
+      description: Ngrok Authentication token
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - managed
+        - none
+      required: true
+      default: "host"
+DM800:
+  scale: 1
