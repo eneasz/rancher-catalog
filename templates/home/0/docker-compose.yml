@@ -3,4 +3,5 @@ DM800:
   hostname: ${HOSTNAME}
   environment:
     - NGROK_AUTH=${NGROK_AUTH}
+    - PYTHONIOENCODING=utf-8
   net: ${NET}
