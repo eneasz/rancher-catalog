@@ -1,0 +1,25 @@
+.catalog:
+  name: Meetup tracer
+  version: v0.1
+  description: Meetup tracer
+  questions:
+    - variable: "PB_KEY"
+      type: "string"
+      label: "PB_KEY"
+      description: Pushbullet key to push notifications to
+    - variable: "SIG_ID"
+      type: "string"
+      label: "SIG_ID"
+      description: Meetup API authentication SIG_ID
+    - variable: NET
+      description: "select Network type"
+      label: "Network"
+      type: enum   
+      options:
+        - host
+        - managed
+        - none
+      required: true
+      default: "host"
+Radarr:
+  scale: 1
