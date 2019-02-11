@@ -1,4 +1,4 @@
-Radarr:
+Meetup:
   image: eneasz/meetup
   hostname: ${HOSTNAME}
   environment:
