@@ -23,6 +23,11 @@
       label: "Movie Share"
       description: the Path to your movies library (/Movies, or a nfs mount /mnt, ...)
       default: '/data/Movies'
+    - variable: "PATHMOVIES2"
+      type: "string"
+      label: "Movie2 Share"
+      description: Second Path to your movies library (/Movies, or a nfs mount /mnt, ...)
+      default: '/movies'
     - variable: "TZ"
       type: "string"
       label: "TZ"
