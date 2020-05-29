@@ -12,5 +12,6 @@ Radarr:
   volumes:
     - ${PATHCONFIG}:/config
     - ${PATHMOVIES}:${PATHMOVIES}
+    - ${PATHMOVIES2}:${PATHMOVIES2}
     - /etc/localtime:/etc/localtime:ro
   net: ${NET}
